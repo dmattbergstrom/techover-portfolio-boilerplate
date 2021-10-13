@@ -14,9 +14,14 @@
       rel="stylesheet"
     />
 
+    <!-- MATERIALIZE CSS -->
+    <link href="style/materialize.min.css" media="all" rel="stylesheet" />
+    <link href="style/padding-margin-helpers.css" media="all" rel="stylesheet" />
+
     <!-- CSS WE HAVE PROVIDED FOR YOU -->
     <link rel="stylesheet" href="style/style.css" />
     <link rel='shortcut icon' href='favicon.png' type='image/x-icon'/ >
+    
 
     <!-- HOSTED PLUGINS THAT WILL MAKE YOUR LIFE EASIER -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
@@ -28,13 +33,66 @@
     <script src="scripts/pt.min.js"></script>
     <script src="scripts/index.js"></script>
     <script src="scripts/modal.js"></script>
+    <script src="scripts/materialize.min.js"></script>
     
   </head>
 
   <body>
-
+      
     <!-- Start writing your HTML code here -->
-    <h1>HELLO MY NAME IS YOUR_NAME</h1>
+    <section class="flex full-section">
+      <div id="pt" class="canvas"></div>
+      <div id="foreground">
+      <h1>HELLO MY NAME IS <span class="primary-text">YOUR_NAME</span>
+          <br>
+          I'm a fullstack developer.
+      </h1>
+      <button class="CTA clickable">Check out my projects <i class="mdi mdi-arrow-right"></i></button>
+      </div>
+    </section>
+
+    <section class="full-section white-section pt100">
+      <div class="container row pt100">
+        <div class="col s12">
+          <div class="hexagon-container col m3 s6">
+            <div class="hexagon">
+              <i class="mdi mdi-speedometer"></i>
+            </div>
+            <h5>About</h5>
+            <p>Making sure we set and reach deadlines is my specialty.</p>
+          </div>
+
+          <div class="hexagon-container col m3 s6">
+            <div class="hexagon">
+              <i class="mdi mdi-cellphone-link"></i>
+            </div>
+            <h5>Responsive</h5>
+            <p>Making sure we set and reach deadlines is my specialty.</p>
+          </div>
+
+          <div class="hexagon-container col m3 s6">
+            <div class="hexagon">
+              <i class="mdi mdi-lightbulb-outline"></i>
+            </div>
+            <h5>Innovative</h5>
+            <p>Making sure we set and reach deadlines is my specialty.</p>
+          </div>
+
+          <div class="hexagon-container col m3 s6">
+            <div class="hexagon">
+              <i class="mdi mdi-rocket"></i>
+            </div>
+            <h5>Results</h5>
+            <p>Making sure we set and reach deadlines is my specialty.</p>
+          </div>
+
+ 
+        </div>
+      </div>
+
+    </section>
+
+
     <!-- Preloads images so that there is no lag when browsing the site: -->
     <div id="preload">
       <img src="img/me.png" />
